@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1 class="text-center">Lista de Cursos</h1>
+<div class="container mt-4">
+    <div class="row" id="card-deck">
+        <!-- Las cards se generarán dinámicamente aquí -->
+    </div>
+</div>
+<script src="{{ url_for('static', filename='js/jscursos.js') }}"></script>
+{% endblock %}
